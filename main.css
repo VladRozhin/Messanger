@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.message-girl {
+    display: flex;
+    align-items: center;
+    /* padding-right: 220px; */
+    align-items: stretch;
+    margin-bottom: 10px;
+}
+.message-boy {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    margin-bottom: 10px;
+    /* padding-left: 220px; */
+}
+.mailer-message-girl, .mailer-message-boy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+}
+.mailer-message-girl {
+    align-items: flex-end;
+}
+.mailer-message-boy {
+    align-items: flex-start;
+}
+.mailer-girl {
+    display: flex;
+    align-items: center;
+}
+.mailer-boy {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.mailer-message-time {
+    color: #aeaeaf;
+}
+.mailer-img {
+    overflow: hidden;
+    width: 100px;
+}
+img {
+    width: 100%;
+}
+.mail-message-girl, .mail-message-boy {
+    border-radius: 20px;
+    padding: 20px;
+}
+.mail-message-girl {
+    /* margin-right: 175px; */
+    border-bottom-left-radius: 0px;
+    background-color: #ffb6c1;
+}
+.mail-message-boy {
+    /* margin-left: 175px; */
+    border-bottom-right-radius: 0px;
+    background-color: #add8e6;
+}
+.window {
+   width: 175px;
+}
+
+@media screen and (max-width:800px) {
+    .mailer-girl {
+        flex-direction: column-reverse;
+    }
+    .mailer-boy {
+        flex-direction: column-reverse;
+    }
+    .window {
+        width: 100px;
+    }
+    .mailer-message-girl, .mailer-message-boy {
+        text-align: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width:550px) {
+    .mail-message-boy {
+        margin-left: 0px;        
+    }
+    .mail-message-girl {
+        margin-right: 0px;
+    }
+    .mailer-img {
+        display: none;
+    }
+    .message-girl {
+        flex-direction: column-reverse;
+    }
+    .message-boy {
+        flex-direction: column-reverse;
+    }
+    .mailer-boy {
+        align-items: flex-end;
+    }
+    .mailer-girl {
+        align-items: flex-start;
+    }
+    .mailer-message-girl {
+        flex-direction: row;
+    }
+    .mailer-message-boy {
+        flex-direction: row-reverse;
+    }
+    .mailer-message-time {
+        padding: 0px 10px;
+    }
+}
